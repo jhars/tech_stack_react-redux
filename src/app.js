@@ -6,10 +6,15 @@ import reducers from './reducers';
 import { Header } from './components/common';
 import LibraryList from './components/LibraryList';
 
+
 const App = () => {
+  // under styles => two sets of curly-braces {{}}
+  // OUter for JSX
+  // Inner for designate Javascript object
   return (
     <Provider store={createStore(reducers)}>
-      <View>
+
+      <View style={{ flex: 1 }}>
         <Header headerText="Tech Stack" />
         <LibraryList />
       </View>
